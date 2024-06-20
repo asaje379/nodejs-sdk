@@ -5,7 +5,7 @@
 Using npm:
 
 ```bash
-    $ npm i @kkiapay-org/nodejs-sdk
+npm i @kkiapay-org/nodejs-sdk
 ```
 
 ## Initialization

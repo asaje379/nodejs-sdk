@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/asaje379/nodejs-sdk.git"
   },
-  "keywords": [],
+  "keywords": [
+    "kkiapay",
+    "node js"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
