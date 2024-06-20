@@ -23,19 +23,20 @@ const refund = async (http: AxiosInstance, transactionId: string) => {
   }
 };
 
-const setup_payout = async (http: AxiosInstance, options: any) => {
-  try {
-    return (await http.post(opts.payoutEndpoint, options)).data;
-  } catch (error: any) {
-    throw new Error(error.response.data);
-  }
-};
+// const setup_payout = async (http: AxiosInstance, options: any) => {
+//   try {
+//     return (await http.post(opts.payoutEndpoint, options)).data;
+//   } catch (error: any) {
+//     throw new Error(error.response.data);
+//   }
+// };
 
-export default function exec(config: ApiOptions) {
+export default function kkiapay(config: ApiOptions) {
   const http = api(config);
   return {
     verify: async (transactionId: string) => await verify(http, transactionId),
     refund: async (transactionId: string) => await refund(http, transactionId),
-    setup_payout: async (transactionId: string) => await setup_payout(http, transactionId),
+    // setup_payout: async (transactionId: string) =>
+    //   await setup_payout(http, transactionId),
   };
 }
